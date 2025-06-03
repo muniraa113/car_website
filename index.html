@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoVibe Motors</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+
+    header h1 {
+      color: #ff3c00;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff3c00;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      font-size: 3em;
+      color: #ff3c00;
+      border-radius: 10px;
+    }
+
+    .models {
+      padding: 50px 20px;
+      background-color: #1c1c1c;
+      text-align: center;
+    }
+
+    .models h2 {
+      margin-bottom: 30px;
+      font-size: 2.2em;
+      color: #ff3c00;
+    }
+
+    .car-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .car {
+      background: #2a2a2a;
+      border-radius: 10px;
+      max-width: 300px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      transition: transform 0.3s;
+    }
+
+    .car:hover {
+      transform: scale(1.03);
+    }
+
+    .car img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .car h3 {
+      margin: 15px 0 10px;
+      color: #ff3c00;
+    }
+
+    .car p {
+      color: #ccc;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AutoVibe Motors</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#models">Models</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Drive Your Dream Today</h2>
+  </section>
+
+  <section class="models" id="models">
+    <h2>Featured Car Models</h2>
+    <div class="car-grid">
+      
+      <div class="car">
+        <img src="fr car.jpeg" alt="Car 1" />
+        <h3>Falcon ZR</h3>
+        <p>The ultimate sports car with a 650hp twin-turbo V8 engine and top speed of 330km/h. Perfect for thrill-seekers.</p>
+      </div>
+
+      <div class="car">
+        <img src="ero.jpeg" alt="Car 2" />
+        <h3>EcoCruze EV</h3>
+        <p>A premium electric car with 500km range, fast charging, and zero emissions. Comfort meets technology.</p>
+      </div>
+
+      <div class="car">
+        <img src="cv.jpeg" alt="Car 3" />
+        <h3>TerraX SUV</h3>
+        <p>All-terrain SUV built for off-road adventures. 4x4 powertrain, rugged design, and unmatched durability.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 AutoVibe Motors | Email: info@autovibe.com | Call: +123 456 7890</p>
+  </footer>
+
+</body>
+</html>
